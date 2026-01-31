@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="randomiser-container">
-      <div class="randomiser-input">
+    <header class="menu">
+      <h1 class="sitename">Hidden Movies</h1>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="saved.html">Saved films</a>
+        <a href="contacts.html">Contact us</a>
+        <a href="" id="login">Log in</a>
+      </nav>
+    </header>
+    <main id="randomiser-main">
+      <div class="card" id="randomiser-card">
         <label for="genre" id="genre-select-label">Select genre:</label>
         <select name="genre" id="genre-select">
           <option value="bodyHorror">Body horror</option>
@@ -25,8 +34,10 @@
         </select>
         <button class="get-film-button">Get film</button>
       </div>
-    </div>
+    </main>
+    <video autoplay muted loop id="bg"></video>
     <script type="module" src="../js/seeder.js"></script>
     <script type="module" src="../js/movieDataFetcher.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
