@@ -6,13 +6,16 @@
 :root {
   /*Palette:
   • black,*/
+  --coffee-bean: #0f0817;
+  --cb08: #0f0817cc;
   --midnight-violet: #2b193d;
+  --mv06: #2b193d9a;
   --blue-slate: #586f7c;
   --light-blue: #b8dbd9;
   --bronze-spice: #c45c16;
 }
 body {
-  font-family: 'Geneva', Tahoma, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--bronze-spice);
 }
 #bg {
@@ -21,31 +24,82 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 header.menu {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top, transparent 0, black 55%);
+  @media (min-width: 1025px) and (max-width: 1350px) {
+    padding-top: 1rem;
+  }
   h1 {
     padding: 1rem;
+    font-family: 'Elephant', serif;
+    @media (max-width: 1024px) {
+      font-size: 1.6rem;
+      padding: 2rem 0.5rem;
+    }
   }
   nav {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
     @media (max-width: 1024px) {
-      width: 50%;
+      width: 60%;
     }
     font-size: 1.2rem;
     a {
       text-decoration: none;
       color: var(--light-blue);
+      &:hover {
+        color: var(--blue-slate);
+      }
+      &#login {
+        font-weight: bold;
+        &:hover {
+          color: var(--bronze-spice);
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 2rem;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card {
+    background: linear-gradient(135deg, var(--cb08), var(--mv06));
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    width: 65%;
+    color: var(--light-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+    &:hover {
+      @media (min-width: 1025px) {
+        transform: translateY(-5px);
+      }
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    .cardtext {
+      margin-top: 0.7rem;
     }
   }
 }
