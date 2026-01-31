@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../media/horror-movie-icon-7376667-512.png" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="menu">
+      <h1 class="sitename">Hidden Movies</h1>
+      <nav class="links">
+        <a href="index.html">Main page</a>
+        <a href="randomiser.html">Randomiser</a>
+        <a href="saved.html">Saved films</a>
+        <a href="" id="login">Log in</a>
+      </nav>
+    </header>
+    <main id="contactmain">
+      <section class="card">
+        <h2>Want to suggest a movie?</h2>
+        <p class="cardtext">
+          Please fill out the form below to suggest a movie. We select our repertoire extremely carefully, so make sure to clearly explain why your suggestion deserves to be featured on this platform.
+          <br /><br />
+          <form action="" method="post">
+            <label for="movie-name">What's your movie called?*</label><br>
+            <input type="text" id="movie-name" required name="movie-name" /><br>
+            <label for="movie-desc">What's it about and what's so special about it (50-3000 characters)?*</label><br>
+            <textarea id="movie-desc" required minlength="50" maxlength="3000" name="movie-desc"></textarea><br>
+            <label for="poster">Upload a poster of the movie</label><br>
+            <input type="file" id="poster" name="poster" accept="image/*" /><br>
+            <label for="trailer-link">Please provide a link to a trailer for your submission</label><br>
+            <input type="url" id="trailer-link" name="trailer-link" /><br>
+            <input type="submit" value="Submit Suggestion" />
+          </form>
+        </p>
+      </section>
+      <section class="card">
+        <h2>Want to contact us directly?</h2>
+        <p class="cardtext">
+          Please proceed to
+          <a
+            id="secret"
+            target="_blank"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >this</a
+          >
+          secure and GDPR-compliant form.
+        </p>
+      </section>
+    </main>
+    <video autoplay muted loop id="bg"></video>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
