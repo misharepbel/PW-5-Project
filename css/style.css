@@ -188,3 +188,55 @@ a#secret {
     color: fuchsia;
   }
 }
+
+#randomiser-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#randomiser-card {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding-bottom: 3vh;
+  @media (min-width: 1024px) {
+    width: 55%;
+  }
+}
+
+#randomiser-card label {
+  font-family: 'Elephant', serif;
+  text-align: center;
+  font-size: 3em;
+  user-select: none;
+}
+
+#randomiser-card select,
+#randomiser-card button {
+  text-align: center;
+  color: var(--bronze-spice);
+  height: 10vh;
+  font-size: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(40, 166, 197);
+  cursor: pointer;
+  background-color: transparent;
+  width: 80%;
+  margin: 0 auto;
+  transition: transform 0.5s ease;
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+}
+
+#randomiser-card select {
+  padding: 0 1.3em;
+}
+
+#randomiser-card select:hover,
+#randomiser-card button:hover {
+  transform: scale(1.1);
+}
