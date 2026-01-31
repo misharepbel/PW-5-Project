@@ -1,127 +1,171 @@
 {
-  "bodyHorror": {
-    "tetsuoTheIronMan": { "year": 1989, "IMDBid": "tt0096251" },
-    "tetsuoIiBodyHammer": { "year": 1992, "IMDBid": "tt0105410" },
-    "videodrome": { "year": 1983, "IMDBid": "tt0086541" },
-    "theFly": { "year": 1986, "IMDBid": "tt0091064" },
-    "crash": { "year": 1996, "IMDBid": "tt0115964" },
-    "possession": { "year": 1981, "IMDBid": "tt0082933" },
-    "raw": { "year": 2016, "IMDBid": "tt4954522" },
-    "titane": { "year": 2021, "IMDBid": "tt10944760" },
-    "thanatomorphose": { "year": 2012, "IMDBid": "tt2122014" },
-    "antiviral": { "year": 2012, "IMDBid": "tt2099556" },
-    "theBrood": { "year": 1979, "IMDBid": "tt0078908" },
-    "society": { "year": 1989, "IMDBid": "tt0098354" },
-    "helterSkelter": { "year": 2012, "IMDBid": "tt2147319" },
-    "taxidermia": { "year": 2006, "IMDBid": "tt0410730" },
-    "martyrs": { "year": 2008, "IMDBid": "tt1029234" }
-  },
+  "bodyHorror": [
+    { "filmName": "tetsuoTheIronMan", "year": 1989, "imdbId": "tt0096251" },
+    { "filmName": "tetsuoIiBodyHammer", "year": 1992, "imdbId": "tt0105410" },
+    { "filmName": "videodrome", "year": 1983, "imdbId": "tt0086541" },
+    { "filmName": "theFly", "year": 1986, "imdbId": "tt0091064" },
+    { "filmName": "crash", "year": 1996, "imdbId": "tt0115964" },
+    { "filmName": "possession", "year": 1981, "imdbId": "tt0082933" },
+    { "filmName": "raw", "year": 2016, "imdbId": "tt4954522" },
+    { "filmName": "titane", "year": 2021, "imdbId": "tt10944760" },
+    { "filmName": "thanatomorphose", "year": 2012, "imdbId": "tt2122014" },
+    { "filmName": "antiviral", "year": 2012, "imdbId": "tt2099556" },
+    { "filmName": "theBrood", "year": 1979, "imdbId": "tt0078908" },
+    { "filmName": "society", "year": 1989, "imdbId": "tt0098354" },
+    { "filmName": "helterSkelter", "year": 2012, "imdbId": "tt2147319" },
+    { "filmName": "taxidermia", "year": 2006, "imdbId": "tt0410730" },
+    { "filmName": "martyrs", "year": 2008, "imdbId": "tt1029234" }
+  ],
 
-  "japaneseArthouse": {
-    "nineSixtyFourPinocchio": { "year": 1991, "IMDBid": "tt0102185" },
-    "rubbersLover": { "year": 1996, "IMDBid": "tt0117490" },
-    "visitorQ": { "year": 2001, "IMDBid": "tt0290329" },
-    "audition": { "year": 1999, "IMDBid": "tt0235198" },
-    "gozu": { "year": 2003, "IMDBid": "tt0361668" },
-    "horrorsOfMalformedMen": { "year": 1969, "IMDBid": "tt0064073" },
-    "aSnakeOfJune": { "year": 2002, "IMDBid": "tt0337961" },
-    "funeralParadeOfRoses": { "year": 1969, "IMDBid": "tt0064068" },
-    "angelsEgg": { "year": 1985, "IMDBid": "tt0208502" },
-    "womanInTheDunes": { "year": 1964, "IMDBid": "tt0058625" },
-    "tokyoFist": { "year": 1995, "IMDBid": "tt0114690" },
-    "bulletBallet": { "year": 1998, "IMDBid": "tt0151809" },
-    "himiko": { "year": 1974, "IMDBid": "tt0071616" },
-    "pastoralToDieInTheCountry": { "year": 1974, "IMDBid": "tt0071910" },
-    "electricDragon80000V": { "year": 2001, "IMDBid": "tt0275773" }
-  },
+  "japaneseArthouse": [
+    {
+      "filmName": "nineSixtyFourPinocchio",
+      "year": 1991,
+      "imdbId": "tt0102185"
+    },
+    { "filmName": "rubbersLover", "year": 1996, "imdbId": "tt0117490" },
+    { "filmName": "visitorQ", "year": 2001, "imdbId": "tt0290329" },
+    { "filmName": "audition", "year": 1999, "imdbId": "tt0235198" },
+    { "filmName": "gozu", "year": 2003, "imdbId": "tt0361668" },
+    {
+      "filmName": "horrorsOfMalformedMen",
+      "year": 1969,
+      "imdbId": "tt0064073"
+    },
+    { "filmName": "aSnakeOfJune", "year": 2002, "imdbId": "tt0337961" },
+    { "filmName": "funeralParadeOfRoses", "year": 1969, "imdbId": "tt0064068" },
+    { "filmName": "angelsEgg", "year": 1985, "imdbId": "tt0208502" },
+    { "filmName": "womanInTheDunes", "year": 1964, "imdbId": "tt0058625" },
+    { "filmName": "tokyoFist", "year": 1995, "imdbId": "tt0114690" },
+    { "filmName": "bulletBallet", "year": 1998, "imdbId": "tt0151809" },
+    { "filmName": "himiko", "year": 1974, "imdbId": "tt0071616" },
+    {
+      "filmName": "pastoralToDieInTheCountry",
+      "year": 1974,
+      "imdbId": "tt0071910"
+    },
+    { "filmName": "electricDragon80000V", "year": 2001, "imdbId": "tt0275773" }
+  ],
 
-  "surrealism": {
-    "eraserhead": { "year": 1977, "IMDBid": "tt0074486" },
-    "inlandEmpire": { "year": 2006, "IMDBid": "tt0460829" },
-    "holyMotors": { "year": 2012, "IMDBid": "tt2076220" },
-    "theHolyMountain": { "year": 1973, "IMDBid": "tt0071615" },
-    "elTopo": { "year": 1970, "IMDBid": "tt0067866" },
-    "theColorOfPomegranates": { "year": 1969, "IMDBid": "tt0063555" },
-    "lastYearAtMarienbad": { "year": 1961, "IMDBid": "tt0054632" },
-    "meshesOfTheAfternoon": { "year": 1943, "IMDBid": "tt0036154" },
-    "unChienAndalou": { "year": 1929, "IMDBid": "tt0020530" },
-    "theSaragossaManuscript": { "year": 1965, "IMDBid": "tt0059643" }
-  },
+  "surrealism": [
+    { "filmName": "eraserhead", "year": 1977, "imdbId": "tt0074486" },
+    { "filmName": "inlandEmpire", "year": 2006, "imdbId": "tt0460829" },
+    { "filmName": "holyMotors", "year": 2012, "imdbId": "tt2076220" },
+    { "filmName": "theHolyMountain", "year": 1973, "imdbId": "tt0071615" },
+    { "filmName": "elTopo", "year": 1970, "imdbId": "tt0067866" },
+    {
+      "filmName": "theColorOfPomegranates",
+      "year": 1969,
+      "imdbId": "tt0063555"
+    },
+    { "filmName": "lastYearAtMarienbad", "year": 1961, "imdbId": "tt0054632" },
+    { "filmName": "meshesOfTheAfternoon", "year": 1943, "imdbId": "tt0036154" },
+    { "filmName": "unChienAndalou", "year": 1929, "imdbId": "tt0020530" },
+    {
+      "filmName": "theSaragossaManuscript",
+      "year": 1965,
+      "imdbId": "tt0059643"
+    }
+  ],
 
-  "transgressive": {
-    "saloOrThe120DaysOfSodom": { "year": 1975, "IMDBid": "tt0073650" },
-    "irreversible": { "year": 2002, "IMDBid": "tt0290673" },
-    "inTheRealmOfTheSenses": { "year": 1976, "IMDBid": "tt0074102" },
-    "pinkFlamingos": { "year": 1972, "IMDBid": "tt0069089" },
-    "theActOfKilling": { "year": 2012, "IMDBid": "tt2375605" },
-    "troubleEveryDay": { "year": 2001, "IMDBid": "tt0204700" },
-    "baiseMoi": { "year": 2000, "IMDBid": "tt0249380" },
-    "singaporeSling": { "year": 1990, "IMDBid": "tt0102920" },
-    "dogtooth": { "year": 2009, "IMDBid": "tt1379182" },
-    "thePianoTeacher": { "year": 2001, "IMDBid": "tt0254686" }
-  },
+  "transgressive": [
+    {
+      "filmName": "saloOrThe120DaysOfSodom",
+      "year": 1975,
+      "imdbId": "tt0073650"
+    },
+    { "filmName": "irreversible", "year": 2002, "imdbId": "tt0290673" },
+    {
+      "filmName": "inTheRealmOfTheSenses",
+      "year": 1976,
+      "imdbId": "tt0074102"
+    },
+    { "filmName": "pinkFlamingos", "year": 1972, "imdbId": "tt0069089" },
+    { "filmName": "theActOfKilling", "year": 2012, "imdbId": "tt2375605" },
+    { "filmName": "troubleEveryDay", "year": 2001, "imdbId": "tt0204700" },
+    { "filmName": "baiseMoi", "year": 2000, "imdbId": "tt0249380" },
+    { "filmName": "singaporeSling", "year": 1990, "imdbId": "tt0102920" },
+    { "filmName": "dogtooth", "year": 2009, "imdbId": "tt1379182" },
+    { "filmName": "thePianoTeacher", "year": 2001, "imdbId": "tt0254686" }
+  ],
 
-  "existential": {
-    "stalker": { "year": 1979, "IMDBid": "tt0079944" },
-    "theSacrifice": { "year": 1986, "IMDBid": "tt0091670" },
-    "upstreamColor": { "year": 2013, "IMDBid": "tt2084989" },
-    "enemy": { "year": 2013, "IMDBid": "tt2316411" },
-    "synecdocheNewYork": { "year": 2008, "IMDBid": "tt0383028" },
-    "anomalisa": { "year": 2015, "IMDBid": "tt2401878" },
-    "theTurinHorse": { "year": 2011, "IMDBid": "tt1316540" },
-    "winterLight": { "year": 1963, "IMDBid": "tt0057358" },
-    "aGhostStory": { "year": 2017, "IMDBid": "tt6265828" },
-    "enterTheVoid": { "year": 2009, "IMDBid": "tt1191111" }
-  },
+  "existential": [
+    { "filmName": "stalker", "year": 1979, "imdbId": "tt0079944" },
+    { "filmName": "theSacrifice", "year": 1986, "imdbId": "tt0091670" },
+    { "filmName": "upstreamColor", "year": 2013, "imdbId": "tt2084989" },
+    { "filmName": "enemy", "year": 2013, "imdbId": "tt2316411" },
+    { "filmName": "synecdocheNewYork", "year": 2008, "imdbId": "tt0383028" },
+    { "filmName": "anomalisa", "year": 2015, "imdbId": "tt2401878" },
+    { "filmName": "theTurinHorse", "year": 2011, "imdbId": "tt1316540" },
+    { "filmName": "winterLight", "year": 1963, "imdbId": "tt0057358" },
+    { "filmName": "aGhostStory", "year": 2017, "imdbId": "tt6265828" },
+    { "filmName": "enterTheVoid", "year": 2009, "imdbId": "tt1191111" }
+  ],
 
-  "experimental": {
-    "begotten": { "year": 1989, "IMDBid": "tt0101420" },
-    "skinamarink": { "year": 2022, "IMDBid": "tt21307994" },
-    "dogStarMan": { "year": 1964, "IMDBid": "tt0057997" },
-    "decasia": { "year": 2002, "IMDBid": "tt0303327" },
-    "laJetee": { "year": 1962, "IMDBid": "tt0056119" },
-    "koyaanisqatsi": { "year": 1982, "IMDBid": "tt0085809" },
-    "manWithAMovieCamera": { "year": 1929, "IMDBid": "tt0019760" },
-    "theFalls": { "year": 1980, "IMDBid": "tt0080738" },
-    "outerSpace": { "year": 1999, "IMDBid": "tt0157209" },
-    "zornsLemma": { "year": 1970, "IMDBid": "tt0066622" }
-  },
+  "experimental": [
+    { "filmName": "begotten", "year": 1989, "imdbId": "tt0101420" },
+    { "filmName": "skinamarink", "year": 2022, "imdbId": "tt21307994" },
+    { "filmName": "dogStarMan", "year": 1964, "imdbId": "tt0057997" },
+    { "filmName": "decasia", "year": 2002, "imdbId": "tt0303327" },
+    { "filmName": "laJetee", "year": 1962, "imdbId": "tt0056119" },
+    { "filmName": "koyaanisqatsi", "year": 1982, "imdbId": "tt0085809" },
+    { "filmName": "manWithAMovieCamera", "year": 1929, "imdbId": "tt0019760" },
+    { "filmName": "theFalls", "year": 1980, "imdbId": "tt0080738" },
+    { "filmName": "outerSpace", "year": 1999, "imdbId": "tt0157209" },
+    { "filmName": "zornsLemma", "year": 1970, "imdbId": "tt0066622" }
+  ],
 
-  "psychologicalDescent": {
-    "perfectBlue": { "year": 1997, "IMDBid": "tt0156887" },
-    "repulsion": { "year": 1965, "IMDBid": "tt0059646" },
-    "cleanShaven": { "year": 1993, "IMDBid": "tt0106579" },
-    "jacobsLadder": { "year": 1990, "IMDBid": "tt0099871" },
-    "hourOfTheWolf": { "year": 1968, "IMDBid": "tt0063759" },
-    "pi": { "year": 1998, "IMDBid": "tt0138704" },
-    "theLighthouse": { "year": 2019, "IMDBid": "tt7984734" },
-    "deadRingers": { "year": 1988, "IMDBid": "tt0094964" },
-    "horseMoney": { "year": 2014, "IMDBid": "tt3093546" },
-    "images": { "year": 1972, "IMDBid": "tt0068732" }
-  },
+  "psychologicalDescent": [
+    { "filmName": "perfectBlue", "year": 1997, "imdbId": "tt0156887" },
+    { "filmName": "repulsion", "year": 1965, "imdbId": "tt0059646" },
+    { "filmName": "cleanShaven", "year": 1993, "imdbId": "tt0106579" },
+    { "filmName": "jacobsLadder", "year": 1990, "imdbId": "tt0099871" },
+    { "filmName": "hourOfTheWolf", "year": 1968, "imdbId": "tt0063759" },
+    { "filmName": "pi", "year": 1998, "imdbId": "tt0138704" },
+    { "filmName": "theLighthouse", "year": 2019, "imdbId": "tt7984734" },
+    { "filmName": "deadRingers", "year": 1988, "imdbId": "tt0094964" },
+    { "filmName": "horseMoney", "year": 2014, "imdbId": "tt3093546" },
+    { "filmName": "images", "year": 1972, "imdbId": "tt0068732" }
+  ],
 
-  "cult": {
-    "valerieAndHerWeekOfWonders": { "year": 1970, "IMDBid": "tt0066516" },
-    "santaSangre": { "year": 1989, "IMDBid": "tt0098253" },
-    "hausu": { "year": 1977, "IMDBid": "tt0076162" },
-    "theReflectingSkin": { "year": 1990, "IMDBid": "tt0100469" },
-    "onTheSilverGlobe": { "year": 1988, "IMDBid": "tt0093593" },
-    "theDevils": { "year": 1971, "IMDBid": "tt0066993" },
-    "alucarda": { "year": 1977, "IMDBid": "tt0075666" },
-    "hardToBeAGod": { "year": 2013, "IMDBid": "tt2328813" },
-    "theCookTheThiefHisWifeAndHerLover": { "year": 1989, "IMDBid": "tt0097108" }
-  },
+  "cult": [
+    {
+      "filmName": "valerieAndHerWeekOfWonders",
+      "year": 1970,
+      "imdbId": "tt0066516"
+    },
+    { "filmName": "santaSangre", "year": 1989, "imdbId": "tt0098253" },
+    { "filmName": "hausu", "year": 1977, "imdbId": "tt0076162" },
+    { "filmName": "theReflectingSkin", "year": 1990, "imdbId": "tt0100469" },
+    { "filmName": "onTheSilverGlobe", "year": 1988, "imdbId": "tt0093593" },
+    { "filmName": "theDevils", "year": 1971, "imdbId": "tt0066993" },
+    { "filmName": "alucarda", "year": 1977, "imdbId": "tt0075666" },
+    { "filmName": "hardToBeAGod", "year": 2013, "imdbId": "tt2328813" },
+    {
+      "filmName": "theCookTheThiefHisWifeAndHerLover",
+      "year": 1989,
+      "imdbId": "tt0097108"
+    }
+  ],
 
-  "forTrueArthouseMasochists": {
-    "derSamurai": { "year": 2014, "IMDBid": "tt2401181" },
-    "beyondTheBlackRainbow": { "year": 2010, "IMDBid": "tt1534085" },
-    "november": { "year": 2017, "IMDBid": "tt6164502" },
-    "theWolfHouse": { "year": 2018, "IMDBid": "tt8173728" },
-    "evolution": { "year": 2015, "IMDBid": "tt4291590" },
-    "possum": { "year": 2018, "IMDBid": "tt6081670" },
-    "theCremator": { "year": 1969, "IMDBid": "tt0063633" },
-    "belladonnaOfSadness": { "year": 1973, "IMDBid": "tt0071203" },
-    "madGod": { "year": 2021, "IMDBid": "tt15090124" },
-    "theHourglassSanatorium": { "year": 1973, "IMDBid": "tt0070628" }
-  }
+  "forTrueArthouseMasochists": [
+    { "filmName": "derSamurai", "year": 2014, "imdbId": "tt2401181" },
+    {
+      "filmName": "beyondTheBlackRainbow",
+      "year": 2010,
+      "imdbId": "tt1534085"
+    },
+    { "filmName": "november", "year": 2017, "imdbId": "tt6164502" },
+    { "filmName": "theWolfHouse", "year": 2018, "imdbId": "tt8173728" },
+    { "filmName": "evolution", "year": 2015, "imdbId": "tt4291590" },
+    { "filmName": "possum", "year": 2018, "imdbId": "tt6081670" },
+    { "filmName": "theCremator", "year": 1969, "imdbId": "tt0063633" },
+    { "filmName": "belladonnaOfSadness", "year": 1973, "imdbId": "tt0071203" },
+    { "filmName": "madGod", "year": 2021, "imdbId": "tt15090124" },
+    {
+      "filmName": "theHourglassSanatorium",
+      "year": 1973,
+      "imdbId": "tt0070628"
+    }
+  ]
 }

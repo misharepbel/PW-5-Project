@@ -1,1 +1,9 @@
-{}
+{
+  "tmdbSettings": {
+    "apiKey": "d0b804944745b493fa7912e8d1d24a00",
+    "apiAccessToken": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMGI4MDQ5NDQ3NDViNDkzZmE3OTEyZThkMWQyNGEwMCIsIm5iZiI6MTc2OTg1Nzg2MC4yNzksInN1YiI6IjY5N2RlMzQ0Y2E5NGRhOWYwYTYxNjgxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.q2bjGvxkFf6zdhYrkkGTdhDpC9f7KbJiEuAt_z50ZEM"
+  },
+  "omdbSettings": {
+    "apiKey": "bb28ca57"
+  }
+}

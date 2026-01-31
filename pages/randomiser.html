@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Randomiser</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <script type="module" src="/js/seeder.js"></script>
+    <div class="randomiser-container">
+      <div class="randomiser-input">
+        <label for="genre" id="genre-select-label">Select genre:</label>
+        <select name="genre" id="genre-select">
+          <option value="bodyHorror">Body horror</option>
+          <option value="japaneseArthouse">Japanese arthouse</option>
+          <option value="surrealism">Surrealism</option>
+          <option value="transgressive">Transgressive</option>
+          <option value="existential">Existential</option>
+          <option value="experimental">Experimental</option>
+          <option value="psychologicalDescent">Psychological descent</option>
+          <option value="cult">Cult</option>
+          <option value="arthouseMasochists">
+            For true arthouse masochists
+          </option>
+        </select>
+        <button class="get-film-button">Get film</button>
+      </div>
+    </div>
+    <script type="module" src="../js/seeder.js"></script>
+    <script type="module" src="../js/movieDataFetcher.js"></script>
   </body>
 </html>
