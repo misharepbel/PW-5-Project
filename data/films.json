@@ -1,0 +1,127 @@
+{
+  "bodyHorror": {
+    "tetsuoTheIronMan": { "year": 1989, "IMDBid": "tt0096251" },
+    "tetsuoIiBodyHammer": { "year": 1992, "IMDBid": "tt0105410" },
+    "videodrome": { "year": 1983, "IMDBid": "tt0086541" },
+    "theFly": { "year": 1986, "IMDBid": "tt0091064" },
+    "crash": { "year": 1996, "IMDBid": "tt0115964" },
+    "possession": { "year": 1981, "IMDBid": "tt0082933" },
+    "raw": { "year": 2016, "IMDBid": "tt4954522" },
+    "titane": { "year": 2021, "IMDBid": "tt10944760" },
+    "thanatomorphose": { "year": 2012, "IMDBid": "tt2122014" },
+    "antiviral": { "year": 2012, "IMDBid": "tt2099556" },
+    "theBrood": { "year": 1979, "IMDBid": "tt0078908" },
+    "society": { "year": 1989, "IMDBid": "tt0098354" },
+    "helterSkelter": { "year": 2012, "IMDBid": "tt2147319" },
+    "taxidermia": { "year": 2006, "IMDBid": "tt0410730" },
+    "martyrs": { "year": 2008, "IMDBid": "tt1029234" }
+  },
+
+  "japaneseArthouse": {
+    "nineSixtyFourPinocchio": { "year": 1991, "IMDBid": "tt0102185" },
+    "rubbersLover": { "year": 1996, "IMDBid": "tt0117490" },
+    "visitorQ": { "year": 2001, "IMDBid": "tt0290329" },
+    "audition": { "year": 1999, "IMDBid": "tt0235198" },
+    "gozu": { "year": 2003, "IMDBid": "tt0361668" },
+    "horrorsOfMalformedMen": { "year": 1969, "IMDBid": "tt0064073" },
+    "aSnakeOfJune": { "year": 2002, "IMDBid": "tt0337961" },
+    "funeralParadeOfRoses": { "year": 1969, "IMDBid": "tt0064068" },
+    "angelsEgg": { "year": 1985, "IMDBid": "tt0208502" },
+    "womanInTheDunes": { "year": 1964, "IMDBid": "tt0058625" },
+    "tokyoFist": { "year": 1995, "IMDBid": "tt0114690" },
+    "bulletBallet": { "year": 1998, "IMDBid": "tt0151809" },
+    "himiko": { "year": 1974, "IMDBid": "tt0071616" },
+    "pastoralToDieInTheCountry": { "year": 1974, "IMDBid": "tt0071910" },
+    "electricDragon80000V": { "year": 2001, "IMDBid": "tt0275773" }
+  },
+
+  "surrealism": {
+    "eraserhead": { "year": 1977, "IMDBid": "tt0074486" },
+    "inlandEmpire": { "year": 2006, "IMDBid": "tt0460829" },
+    "holyMotors": { "year": 2012, "IMDBid": "tt2076220" },
+    "theHolyMountain": { "year": 1973, "IMDBid": "tt0071615" },
+    "elTopo": { "year": 1970, "IMDBid": "tt0067866" },
+    "theColorOfPomegranates": { "year": 1969, "IMDBid": "tt0063555" },
+    "lastYearAtMarienbad": { "year": 1961, "IMDBid": "tt0054632" },
+    "meshesOfTheAfternoon": { "year": 1943, "IMDBid": "tt0036154" },
+    "unChienAndalou": { "year": 1929, "IMDBid": "tt0020530" },
+    "theSaragossaManuscript": { "year": 1965, "IMDBid": "tt0059643" }
+  },
+
+  "transgressive": {
+    "saloOrThe120DaysOfSodom": { "year": 1975, "IMDBid": "tt0073650" },
+    "irreversible": { "year": 2002, "IMDBid": "tt0290673" },
+    "inTheRealmOfTheSenses": { "year": 1976, "IMDBid": "tt0074102" },
+    "pinkFlamingos": { "year": 1972, "IMDBid": "tt0069089" },
+    "theActOfKilling": { "year": 2012, "IMDBid": "tt2375605" },
+    "troubleEveryDay": { "year": 2001, "IMDBid": "tt0204700" },
+    "baiseMoi": { "year": 2000, "IMDBid": "tt0249380" },
+    "singaporeSling": { "year": 1990, "IMDBid": "tt0102920" },
+    "dogtooth": { "year": 2009, "IMDBid": "tt1379182" },
+    "thePianoTeacher": { "year": 2001, "IMDBid": "tt0254686" }
+  },
+
+  "existential": {
+    "stalker": { "year": 1979, "IMDBid": "tt0079944" },
+    "theSacrifice": { "year": 1986, "IMDBid": "tt0091670" },
+    "upstreamColor": { "year": 2013, "IMDBid": "tt2084989" },
+    "enemy": { "year": 2013, "IMDBid": "tt2316411" },
+    "synecdocheNewYork": { "year": 2008, "IMDBid": "tt0383028" },
+    "anomalisa": { "year": 2015, "IMDBid": "tt2401878" },
+    "theTurinHorse": { "year": 2011, "IMDBid": "tt1316540" },
+    "winterLight": { "year": 1963, "IMDBid": "tt0057358" },
+    "aGhostStory": { "year": 2017, "IMDBid": "tt6265828" },
+    "enterTheVoid": { "year": 2009, "IMDBid": "tt1191111" }
+  },
+
+  "experimental": {
+    "begotten": { "year": 1989, "IMDBid": "tt0101420" },
+    "skinamarink": { "year": 2022, "IMDBid": "tt21307994" },
+    "dogStarMan": { "year": 1964, "IMDBid": "tt0057997" },
+    "decasia": { "year": 2002, "IMDBid": "tt0303327" },
+    "laJetee": { "year": 1962, "IMDBid": "tt0056119" },
+    "koyaanisqatsi": { "year": 1982, "IMDBid": "tt0085809" },
+    "manWithAMovieCamera": { "year": 1929, "IMDBid": "tt0019760" },
+    "theFalls": { "year": 1980, "IMDBid": "tt0080738" },
+    "outerSpace": { "year": 1999, "IMDBid": "tt0157209" },
+    "zornsLemma": { "year": 1970, "IMDBid": "tt0066622" }
+  },
+
+  "psychologicalDescent": {
+    "perfectBlue": { "year": 1997, "IMDBid": "tt0156887" },
+    "repulsion": { "year": 1965, "IMDBid": "tt0059646" },
+    "cleanShaven": { "year": 1993, "IMDBid": "tt0106579" },
+    "jacobsLadder": { "year": 1990, "IMDBid": "tt0099871" },
+    "hourOfTheWolf": { "year": 1968, "IMDBid": "tt0063759" },
+    "pi": { "year": 1998, "IMDBid": "tt0138704" },
+    "theLighthouse": { "year": 2019, "IMDBid": "tt7984734" },
+    "deadRingers": { "year": 1988, "IMDBid": "tt0094964" },
+    "horseMoney": { "year": 2014, "IMDBid": "tt3093546" },
+    "images": { "year": 1972, "IMDBid": "tt0068732" }
+  },
+
+  "cult": {
+    "valerieAndHerWeekOfWonders": { "year": 1970, "IMDBid": "tt0066516" },
+    "santaSangre": { "year": 1989, "IMDBid": "tt0098253" },
+    "hausu": { "year": 1977, "IMDBid": "tt0076162" },
+    "theReflectingSkin": { "year": 1990, "IMDBid": "tt0100469" },
+    "onTheSilverGlobe": { "year": 1988, "IMDBid": "tt0093593" },
+    "theDevils": { "year": 1971, "IMDBid": "tt0066993" },
+    "alucarda": { "year": 1977, "IMDBid": "tt0075666" },
+    "hardToBeAGod": { "year": 2013, "IMDBid": "tt2328813" },
+    "theCookTheThiefHisWifeAndHerLover": { "year": 1989, "IMDBid": "tt0097108" }
+  },
+
+  "forTrueArthouseMasochists": {
+    "derSamurai": { "year": 2014, "IMDBid": "tt2401181" },
+    "beyondTheBlackRainbow": { "year": 2010, "IMDBid": "tt1534085" },
+    "november": { "year": 2017, "IMDBid": "tt6164502" },
+    "theWolfHouse": { "year": 2018, "IMDBid": "tt8173728" },
+    "evolution": { "year": 2015, "IMDBid": "tt4291590" },
+    "possum": { "year": 2018, "IMDBid": "tt6081670" },
+    "theCremator": { "year": 1969, "IMDBid": "tt0063633" },
+    "belladonnaOfSadness": { "year": 1973, "IMDBid": "tt0071203" },
+    "madGod": { "year": 2021, "IMDBid": "tt15090124" },
+    "theHourglassSanatorium": { "year": 1973, "IMDBid": "tt0070628" }
+  }
+}
