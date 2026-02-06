@@ -12,30 +12,33 @@ async function displayFilmData() {
         behavior: 'smooth',
     });
 
-    // Utility function to wait for a given number of milliseconds
-    function delay(ms) {
-        return new Promise((resolve) => setTimeout(resolve, ms));
-    }
-
     async function fadeSwap() {
         const randomiserMain = document.querySelector('#randomiser-main');
         const filmDataSection = document.querySelector(
             'main#film-data-section',
         );
 
-        // Fade out randomiser
-        randomiserMain.style.opacity = 0;
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        const randomiserMainDisplayMode =
+            window.getComputedStyle(randomiserMain).display;
+        //Fade out randomiser main
+        if (randomiserMainDisplayMode !== 'none') {
+            randomiserMain.style.opacity = 0;
+            await new Promise((resolve) => setTimeout(resolve, 1500));
+            randomiserMain.style.display = 'none';
+        }
+        //Fade in film data section
+        if (randomiserMainDisplayMode !== 'none') {
+            filmDataSection.style.display = 'flex';
+            await new Promise((resolve) => setTimeout(resolve, 1500));
 
-        // Hide randomiser
-        randomiserMain.style.display = 'none';
-
-        // Prepare filmDataSection for fade-in
-        filmDataSection.style.display = 'flex';
-
-        // Force browser to register styles
-        void filmDataSection.offsetWidth;
-        filmDataSection.style.opacity = '1';
+            filmDataSection.style.opacity = '1';
+        } else {
+            filmDataSection.style.transition = 'opacity 0.5s ease';
+            filmDataSection.style.opacity = '0';
+            await new Promise((resolve) => setTimeout(resolve, 1500));
+            filmDataSection.style.opacity = '1';
+            filmDataSection.style.transition = 'opacity 1.5s ease';
+        }
     }
 
     fadeSwap();

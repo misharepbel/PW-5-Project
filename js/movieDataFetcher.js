@@ -104,15 +104,17 @@ export async function fetchMovieData() {
 
 //Randomly select movie from list of movies by user selected genre
 function selectMovie() {
+    const randomiserMain = document.getElementById('randomiser-main');
     const randomiserCardDisplayMode =
-        document.getElementById('randomiser-main').style.display;
+        window.getComputedStyle(randomiserMain).display;
+
+    const genreSelects = document.querySelectorAll('.genre-select');
     let userGenreSelect = '';
+
     if (randomiserCardDisplayMode !== 'none') {
-        userGenreSelect = document.querySelector('.genre-select').value;
+        userGenreSelect = genreSelects[0].value;
     } else {
-        userGenreSelect = document.querySelector(
-            '.genre-select:nth-child(2)',
-        ).value;
+        userGenreSelect = genreSelects[1].value;
     }
     console.log(userGenreSelect);
     const filmsByGenreCollection = JSON.parse(
