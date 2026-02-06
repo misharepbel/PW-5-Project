@@ -208,6 +208,7 @@ a#secret {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 1;
   transition: opacity 1.5s ease;
 }
 
@@ -384,14 +385,6 @@ p#description {
 .film-data-select-container select:hover,
 .film-data-select-container button:hover {
   transform: scale(1.05);
-}
-
-.fade-out {
-  opacity: 0;
-}
-
-.fade-in {
-  opacity: 1;
 }
 
 /* Modal styles */

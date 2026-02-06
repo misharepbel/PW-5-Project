@@ -24,7 +24,7 @@ async function displayFilmData() {
         );
 
         // Fade out randomiser
-        randomiserMain.classList.add('fade-out');
+        randomiserMain.style.opacity = 0;
         await new Promise((resolve) => setTimeout(resolve, 1500));
 
         // Hide randomiser
