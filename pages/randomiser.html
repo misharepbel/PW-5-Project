@@ -11,9 +11,10 @@
       <h1 class="sitename">Hidden Movies</h1>
       <nav class="links">
         <a href="index.html">Home</a>
-        <a href="saved.html">Saved films</a>
+        <a class="logged-in-only">Saved films</a>
         <a href="contacts.html">Contact us</a>
-        <a href="" id="login">Log in</a>
+        <a href="#" id="login-trigger">Log in</a>
+        <a href="#" id="logout-trigger" hidden>Log out</a>
       </nav>
     </header>
     <main id="randomiser-main">
@@ -120,6 +121,23 @@
       </div>
     </main>
     <video autoplay muted loop id="bg"></video>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Log in</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit">Log in</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="../js/seeder.js"></script>
     <script type="module" src="../js/filmDataDisplay.js"></script>
     <script type="module" src="../js/movieDataFetcher.js"></script>
