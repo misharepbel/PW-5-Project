@@ -19,8 +19,8 @@
     </header>
     <main id="randomiser-main">
       <div class="card" id="randomiser-card">
-        <label for="genre" id="genre-select-label">Select genre:</label>
-        <select name="genre" id="genre-select">
+        <label for="genre" class="genre-select-label">Select genre:</label>
+        <select name="genre" class="genre-select">
           <option value="bodyHorror">Body horror</option>
           <option value="japaneseArthouse">Japanese arthouse</option>
           <option value="surrealism">Surrealism</option>
@@ -33,7 +33,91 @@
             For true arthouse masochists
           </option>
         </select>
-        <button class="get-film-button">Get film</button>
+        <button class="genre-button">Get film</button>
+      </div>
+    </main>
+
+    <main id="film-data-section">
+      <div class="card" id="film-data-card">
+        <h2 id="film-title"></h2>
+        <div class="film-main">
+          <img src="" alt="Film poster" />
+          <div class="film-info">
+            <p id="budget"></p>
+            <p id="box-office"></p>
+            <p id="director"></p>
+            <p id="actors"></p>
+            <p id="release-date"></p>
+            <p id="duration"></p>
+          </div>
+        </div>
+        <p id="description-title">Description:</p>
+        <p id="description"></p>
+        <div class="trailer">
+          <iframe
+            src=""
+            frameborder="0"
+            title="Film trailer"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="ratings">
+          <fieldset>
+            <legend>IMDB</legend>
+            <div class="rating-container">
+              <span id="imdb-icon"
+                ><img src="../media/imdb_icon.webp" alt="IMDB icon"
+              /></span>
+              <p></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Rotten Tomatoes</legend>
+            <div class="rating-container">
+              <span id="rotten-tomatoes-icon"
+                ><img
+                  src="../media/rotten_tomatoes_icon.png"
+                  alt="Rotten Tomatoes icon"
+              /></span>
+              <p></p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Metacritic</legend>
+            <div class="rating-container">
+              <span id="metacritic-icon"
+                ><img src="../media/metacritic_icon.png" alt="Metacritic icon"
+              /></span>
+              <p></p>
+            </div>
+          </fieldset>
+        </div>
+        <div class="film-data-select-genre">
+          <label
+            for="genre"
+            class="genre-select-label"
+            id="data-film-genre-select-label"
+            >Select genre:</label
+          >
+          <div class="film-data-select-container">
+            <select name="genre" class="genre-select">
+              <option value="bodyHorror">Body horror</option>
+              <option value="japaneseArthouse">Japanese arthouse</option>
+              <option value="surrealism">Surrealism</option>
+              <option value="transgressive">Transgressive</option>
+              <option value="existential">Existential</option>
+              <option value="experimental">Experimental</option>
+              <option value="psychologicalDescent">
+                Psychological descent
+              </option>
+              <option value="cult">Cult</option>
+              <option value="arthouseMasochists">
+                For true arthouse masochists
+              </option>
+            </select>
+            <button class="genre-button">Get film</button>
+          </div>
+        </div>
       </div>
     </main>
     <video autoplay muted loop id="bg"></video>
@@ -55,6 +139,7 @@
       </div>
     </div>
     <script type="module" src="../js/seeder.js"></script>
+    <script type="module" src="../js/filmDataDisplay.js"></script>
     <script type="module" src="../js/movieDataFetcher.js"></script>
     <script src="../js/script.js"></script>
   </body>
