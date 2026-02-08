@@ -182,12 +182,6 @@ main#contactmain {
           }
         }
       }
-      textarea {
-        height: 8rem;
-        resize: vertical;
-        background-color: var(--light-blue);
-        padding: 0.5rem;
-      }
       label {
         margin-bottom: 2rem;
       }
