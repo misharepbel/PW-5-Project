@@ -507,7 +507,7 @@ main .saved-film-card {
   font-size: 1.5em;
 }
 
-.saved-film-card span#cross {
+.saved-film-card span.cross {
   position: absolute;
   width: 8%;
   height: 5.5%;
@@ -524,11 +524,11 @@ main .saved-film-card {
   }
 }
 
-.saved-film-card span#cross:hover {
+.saved-film-card span.cross:hover {
   background-color: rgba(184, 219, 217, 0.5);
 }
 
-.saved-film-card img#poster {
+.saved-film-card img.poster {
   width: 100%;
   height: auto;
   aspect-ratio: 3 / 4;

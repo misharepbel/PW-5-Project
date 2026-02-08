@@ -11,6 +11,11 @@ if (document.body.dataset.page != 'saved-films') {
 document.addEventListener('DOMContentLoaded', () => {
     if (document.body.dataset.page == 'saved-films') {
         savedFilmsDisplay();
+        document
+            .querySelectorAll('.saved-film-card span.cross')
+            .forEach((crossIcon) => {
+                crossIcon.addEventListener('click', removeSavedFilm);
+            });
     }
 });
 
@@ -27,18 +32,36 @@ async function savedFilmsDisplay() {
 
     const emptySaved = document.querySelector('main#empty-saved');
     emptySaved.style.display = 'none';
+
+    //Create grid container for saved films
     const main = document.createElement('main');
     main.id = 'saved-film-grid-container';
     for (const film of savedFilms) {
+        //Create container for saved film card
         const section = document.createElement('section');
         section.classList.add('card');
         section.classList.add('saved-film-card');
+
+        //Create header for film title
         const title = document.createElement('h4');
         title.innerHTML = film.title;
+
+        //Create cross icon
+        const crossIcon = document.createElement('span');
+        crossIcon.classList.add('cross');
+        const crossImg = document.createElement('img');
+        crossImg.src = '../media/cross.png';
+        crossImg.alt = 'Cross icon';
+        crossIcon.append(crossImg);
+
+        //Create poster ima
         const img = document.createElement('img');
+        img.classList.add('poster');
         img.src = film.poster;
         img.alt = 'Saved film poster';
-        section.append(title, img);
+
+        //Append all the elements to finally create card
+        section.append(crossIcon, title, img);
         main.append(section);
         document.body.append(main);
     }
@@ -83,4 +106,21 @@ function addOrRemoveFromSavedFilms() {
 
     console.log(filmTitleParsed);
     console.log(localStorage.getItem(`movie_${filmTitleParsed}`));
+}
+
+function removeSavedFilm(e) {
+    const card = e.target.closest('.saved-film-card');
+    const filmTitle = card.querySelector('h4').innerHTML;
+    const filmTitleArray = filmTitle
+        .toLowerCase()
+        .split(' ')
+        .map((word) => word.replace(/[^a-z]/g, ''));
+    for (let i = 1; i < filmTitleArray.length; i++) {
+        filmTitleArray[i] =
+            filmTitleArray[i][0].toUpperCase() + filmTitleArray[i].substring(1);
+    }
+    let filmTitleParsed = filmTitleArray.join('');
+    localStorage.removeItem(`movie_${filmTitleParsed}`);
+
+    window.location.reload();
 }
