@@ -11,7 +11,7 @@
   --midnight-violet: #2b193d;
   --mv06: #2b193d9a;
   --blue-slate: #586f7c;
-  --light-blue: #b8dbd9;
+  --light-blue: rgb(184, 219, 217);
   --bronze-spice: #c45c16;
 }
 body {
@@ -298,6 +298,35 @@ main#film-data-section {
 
 main #film-data-card {
   width: 80%;
+  position: relative;
+  span#add-to-saved {
+    position: absolute;
+    right: -10%;
+    width: 15%;
+    cursor: pointer;
+    img {
+      height: 25%;
+      width: 25%;
+      position: relative;
+    }
+  }
+}
+
+main #film-data-card span#add-to-saved::before {
+  position: absolute;
+  content: 'Add or remove from saved';
+  font-size: 1.05em;
+  opacity: 0;
+  left: -120%;
+  top: 20%;
+  transition: opacity 0.5s ease;
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  padding: 0.1em;
+}
+
+main #film-data-card span#add-to-saved:hover::before {
+  opacity: 1;
 }
 
 #film-title {
@@ -347,8 +376,8 @@ p#description {
 }
 
 #imdb-icon img {
-  max-height: 100%;
-  max-width: 50%;
+  max-height: 90%;
+  max-width: 60%;
   margin-top: -10px;
 }
 
@@ -362,7 +391,7 @@ p#description {
 #metacritic-icon img {
   max-height: 75%;
   max-width: 50%;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .film-data-select-container {
@@ -460,4 +489,55 @@ p#description {
   border-radius: 4px;
   box-sizing: border-box;
   background-color: var(--light-blue);
+}
+
+main#saved-film-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+main .saved-film-card {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.saved-film-card h4 {
+  font-family: 'Elephant', 'serif';
+  margin-bottom: 5%;
+  font-size: 1.5em;
+}
+
+.saved-film-card span#cross {
+  position: absolute;
+  width: 8%;
+  height: 5.5%;
+  top: 2%;
+  right: 5%;
+  background-color: rgba(184, 219, 217, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.saved-film-card span#cross:hover {
+  background-color: rgba(184, 219, 217, 0.5);
+}
+
+.saved-film-card img#poster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
 }

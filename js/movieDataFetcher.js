@@ -121,6 +121,10 @@ function selectMovie() {
         localStorage.getItem('filmsData'),
     );
     const randomMovie =
-        filmsByGenreCollection[userGenreSelect][Math.floor(Math.random() * 9)];
+        filmsByGenreCollection[userGenreSelect][
+            Math.floor(
+                Math.random() * filmsByGenreCollection[userGenreSelect].length,
+            )
+        ];
     return randomMovie;
 }

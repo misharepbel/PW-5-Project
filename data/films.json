@@ -1,7 +1,6 @@
 {
   "bodyHorror": [
     { "filmName": "tetsuoTheIronMan", "year": 1989, "imdbId": "tt0096251" },
-    { "filmName": "tetsuoIiBodyHammer", "year": 1992, "imdbId": "tt0105410" },
     { "filmName": "videodrome", "year": 1983, "imdbId": "tt0086541" },
     { "filmName": "theFly", "year": 1986, "imdbId": "tt0091064" },
     { "filmName": "crash", "year": 1996, "imdbId": "tt0115964" },
@@ -18,11 +17,6 @@
   ],
 
   "japaneseArthouse": [
-    {
-      "filmName": "nineSixtyFourPinocchio",
-      "year": 1991,
-      "imdbId": "tt0102185"
-    },
     { "filmName": "rubbersLover", "year": 1996, "imdbId": "tt0117490" },
     { "filmName": "visitorQ", "year": 2001, "imdbId": "tt0290329" },
     { "filmName": "audition", "year": 1999, "imdbId": "tt0235198" },
@@ -43,8 +37,7 @@
       "filmName": "pastoralToDieInTheCountry",
       "year": 1974,
       "imdbId": "tt0071910"
-    },
-    { "filmName": "electricDragon80000V", "year": 2001, "imdbId": "tt0275773" }
+    }
   ],
 
   "surrealism": [
@@ -69,11 +62,6 @@
   ],
 
   "transgressive": [
-    {
-      "filmName": "saloOrThe120DaysOfSodom",
-      "year": 1975,
-      "imdbId": "tt0073650"
-    },
     { "filmName": "irreversible", "year": 2002, "imdbId": "tt0290673" },
     {
       "filmName": "inTheRealmOfTheSenses",
@@ -90,7 +78,6 @@
   ],
 
   "existential": [
-    { "filmName": "stalker", "year": 1979, "imdbId": "tt0079944" },
     { "filmName": "theSacrifice", "year": 1986, "imdbId": "tt0091670" },
     { "filmName": "upstreamColor", "year": 2013, "imdbId": "tt2084989" },
     { "filmName": "enemy", "year": 2013, "imdbId": "tt2316411" },

@@ -7,7 +7,7 @@
     <link rel="icon" href="../media/horror-movie-icon-7376667-512.png" />
     <title>Hidden Movies</title>
   </head>
-  <body>
+  <body data-page="saved-films">
     <header class="menu">
       <h1 class="sitename">Hidden Movies</h1>
       <nav class="links">
@@ -18,18 +18,17 @@
         <a href="#" id="logout-trigger" hidden>Log out</a>
       </nav>
     </header>
-    <main>
-      <section class="card">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-          perferendis voluptatibus tempora vel quae ad officia minus, similique
-          in temporibus fugiat eum dolores totam obcaecati. Ullam dolor
-          explicabo dolorum illo. Rerum quidem ipsam repellendus accusantium
-          quibusdam fuga, voluptatem vitae blanditiis dolore nisi aspernatur
-          alias? Fugit facere natus voluptas aliquid quos?
-        </p>
+    <main id="empty-saved">
+      <section class="card" style="text-align: center">
+        <h1 style="margin-bottom: 1%">
+          Oops... You haven`t added any movies to saved yet
+        </h1>
+        <a href="./randomiser.html" style="color: #c45c16"
+          ><h3>Maybe you would like to check some?</h3></a
+        >
       </section>
     </main>
+
     <video autoplay muted loop id="bg"></video>
     <div id="loginModal" class="modal">
       <div class="modal-content">
@@ -48,6 +47,7 @@
         </form>
       </div>
     </div>
+    <script type="module" src="../js/savedFilmsDisplay.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@ for (const button of genreButtons) {
     button.addEventListener('click', displayFilmData);
 }
 
-async function displayFilmData() {
+export async function displayFilmData() {
     window.scrollTo({
         top: 0,
         left: 0,
@@ -44,7 +44,10 @@ async function displayFilmData() {
     fadeSwap();
 
     const filmData = await fetchMovieData();
-    document.querySelector('h2#film-title').innerHTML = filmData.title;
+    const filmTitle = document.querySelector('h2#film-title');
+    const addToSavedButton = document.querySelector('span#add-to-saved img');
+
+    filmTitle.innerHTML = filmData.title;
     document.querySelector('p#budget').innerHTML = 'Budget: ' + filmData.budget;
     document.querySelector('p#box-office').innerHTML =
         'Box office: ' + filmData.boxOffice;
@@ -63,4 +66,31 @@ async function displayFilmData() {
         filmData.rottenTomatoesRating;
     document.querySelector('#metacritic-icon + p').innerHTML =
         filmData.metacriticRating;
+
+    let isSaved = isSavedToLocalStorage(filmTitle);
+    console.log(isSaved);
+    if (isSaved) {
+        addToSavedButton.src = '../media/yellow_star.png';
+    } else {
+        addToSavedButton.src = '../media/empty_star.png';
+    }
+}
+
+function isSavedToLocalStorage(filmTitle) {
+    const filmTitleArray = filmTitle.innerHTML
+        .toLowerCase()
+        .split(' ')
+        .map((word) => word.replace(/[^a-z]/g, ''));
+
+    for (let i = 1; i < filmTitleArray.length; i++) {
+        filmTitleArray[i] =
+            filmTitleArray[i][0].toUpperCase() + filmTitleArray[i].substring(1);
+    }
+    let filmTitleParsed = filmTitleArray.join('');
+
+    console.log(filmTitleParsed);
+
+    let filmLocalStorage = localStorage.getItem(`movie_${filmTitleParsed}`);
+    console.log(filmLocalStorage);
+    return !filmLocalStorage ? false : true;
 }
