@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
             element.style.color = 'var(--light-blue)';
         });
     }
+    else if (window.location.pathname.split('/').pop()==="saved.html"){
+        window.location.href = 'index.html';
+    }
 
     document
         .getElementById('login-trigger')
