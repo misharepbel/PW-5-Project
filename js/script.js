@@ -103,7 +103,11 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('logout-trigger').innerText = 'Log out';
 
             user.isLoggedIn = false;
-
-            window.location.reload();
+            if (window.location.pathname.split('/').pop()==="saved.html") {
+                window.location.href = 'index.html';
+            } else {
+                window.location.reload();
+            }
+            
         });
 });
