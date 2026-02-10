@@ -7,13 +7,94 @@ document.addEventListener('DOMContentLoaded', function () {
             : '../media/7984191-hd_720_1366_25fps.mp4';
     video.src = src;
 
+    const userStr = localStorage.getItem('user');
+    const user = userStr ? JSON.parse(userStr) : null;
+
+    // Popup alert
+    const popupAlert = document.querySelector('.alert-popup');
+    const submitButton = document.querySelector("form input[type='submit']");
+    const popupAlertText = document.querySelector('.alert-popup p');
+    const cross = document.querySelector('.alert-popup-cross-container img')
+    const form = document.querySelector('form#movie-form');
+    const movieTitleInput = document.querySelector('input#movie-name');
+    const movieDescInput = document.querySelector('textarea#movie-desc');
+
+    cross.addEventListener('click', () => {
+        closePopup();
+    })
+
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPopupAlert();
+    })
+
+    async function showPopupAlert() {
+        if (!form.checkValidity()){
+            return;
+        }
+        movieTitleInput.value = '';
+        movieDescInput.value = '';
+        if (user !== null) {
+            const popupIcon = popupAlert.querySelector('.alert-popup-icon-container img');
+            popupIcon.src = '../media/green_check_mark.png'
+            popupAlertText.style.fontSize = '0.9em';
+            popupAlertText.innerHTML = 'Your suggestion submitted successfully. Thank you!'
+
+        }
+        popupAlert.style.display = 'block';
+        await new Promise(resolve => setTimeout(resolve, 500));
+        popupAlert.style.opacity = '1';
+        await new Promise(resolve => setTimeout(resolve, 10000));
+        popupAlert.style.display = 'none';
+    }
+
+    function closePopup() {
+        popupAlert.style.display = 'none';
+    }
+
+    //Validation
+    
+    movieTitleInput.addEventListener('focusout', checkInputValidity);
+    movieDescInput.addEventListener('focusout', checkInputValidity);
+
+    function checkInputValidity(e) {
+        if (e.target.closest('input#movie-name') === movieTitleInput 
+            && !movieTitleInput.validity.valid) {
+            const invalidInputs = document.querySelectorAll('input#movie-name ~ p');
+            if (invalidInputs.length > 0) {
+                return;
+            }
+            const invalidInputText = document.createElement('p');
+            invalidInputText.classList.add('invalid-input-text');
+            invalidInputText.innerHTML = "You have to enter film name";
+            movieTitleInput.after(invalidInputText);
+        } else if (e.target.closest('input#movie-name') === movieTitleInput
+            && movieTitleInput.validity.valid 
+            && movieTitleInput.nextSibling === document.querySelector('input#movie-name + p')) {
+                movieTitleInput.nextElementSibling.remove();
+        }
+
+        if (e.target.closest('textarea#movie-desc') === movieDescInput 
+            && !movieDescInput.validity.valid) {
+            const invalidInputs = document.querySelectorAll('textarea#movie-desc ~ p');
+            if (invalidInputs.length > 0) {
+                return;
+            }
+            const invalidInputText = document.createElement('p');
+            invalidInputText.classList.add('invalid-input-text');
+            invalidInputText.innerHTML = "Movie description have to be at least 50 symbols";
+            movieDescInput.after(invalidInputText);
+        } else if (e.target.closest('textarea#movie-desc') === movieDescInput
+            && movieDescInput.validity.valid 
+            && movieDescInput.nextSibling === document.querySelector('textarea#movie-desc + p')) {
+                movieDescInput.nextElementSibling.remove();
+        }
+    }
+
     //Login
     const modal = document.getElementById('loginModal');
     const closeBtn = document.querySelector('.close');
     const loginForm = document.getElementById('loginForm');
-
-    const userStr = localStorage.getItem('user');
-    const user = userStr ? JSON.parse(userStr) : null;
 
     if (user && user.isLoggedIn) {
         document.getElementById('login-trigger').style.display = 'none';

@@ -535,3 +535,56 @@ main .saved-film-card {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.alert-popup {
+  display: none;
+  position: absolute;
+  background-color: rgba(62, 10, 10, 0.6);
+  width: 25%;
+  height: 11%;
+  bottom: 4%;
+  right: 1%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.alert-popup-flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alert-popup-icon-container img {
+  height: 90%;
+  width: 12%;
+  background-color: var(--light-blue);
+  border-radius: 15px 0 15px 0;
+}
+
+.alert-popup-cross-container {
+  text-align: right;
+}
+
+.alert-popup-cross-container img {
+  height: 100%;
+  width: 30%;
+  border-radius: 0 15px 0 15px;
+  background-color: rgb(62, 10, 10);
+  cursor: pointer;
+}
+
+.alert-popup-cross-container img:hover {
+  background-color: rgb(143, 15, 15);
+}
+
+.alert-popup p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+p.invalid-input-text {
+  font-size: 70%;
+  color: red;
+}

@@ -41,7 +41,7 @@ async function extractMovieData(filmOmdb, filmTmdb) {
     const filmData = new filmDetails();
 
     filmData.title = filmOmdb.Title;
-    filmData.budget = filmTmdb.budget;
+    filmData.budget = filmTmdb.budget == '0' ? 'N/A' : filmTmdb.budget;
     filmData.boxOffice = filmOmdb.BoxOffice;
     filmData.director = filmOmdb.Director;
     filmData.actors = filmOmdb.Actors;
