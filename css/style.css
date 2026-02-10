@@ -263,12 +263,20 @@ a#secret {
     flex-direction: column;
     justify-content: space-between;
     font-size: 1.3em;
+    @media (max-width: 768px) {
+      font-size: 1em;
+    }
   }
   margin-bottom: 1.5em;
 }
 
 .film-main img {
   border-radius: 5px;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .trailer {
@@ -298,29 +306,38 @@ main #film-data-card {
     right: -10%;
     width: 15%;
     cursor: pointer;
+    @media (max-width: 768px) {
+      right: -2%;
+      top: 0.2%;
+    }
     img {
       height: 25%;
       width: 25%;
       position: relative;
+      @media (max-width: 768px) {
+        height: 80%;
+        width: 80%;
+      }
     }
   }
 }
 
-main #film-data-card span#add-to-saved::before {
-  position: absolute;
-  content: 'Add or remove from saved';
-  font-size: 1.05em;
-  opacity: 0;
-  left: -120%;
-  top: 20%;
-  transition: opacity 0.5s ease;
-  background-color: var(--light-blue);
-  border-radius: 5px;
-  padding: 0.1em;
-}
-
-main #film-data-card span#add-to-saved:hover::before {
-  opacity: 1;
+@media (min-width: 769px) {
+  main #film-data-card span#add-to-saved::before {
+    position: absolute;
+    content: 'Add or remove from saved';
+    font-size: 1.05em;
+    opacity: 0;
+    left: -120%;
+    top: 20%;
+    transition: opacity 0.5s ease;
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    padding: 0.1em;
+  }
+  main #film-data-card span#add-to-saved:hover::before {
+    opacity: 1;
+  }
 }
 
 #film-title {
@@ -328,15 +345,24 @@ main #film-data-card span#add-to-saved:hover::before {
   margin-bottom: 0.8em;
   font-family: 'Elephant', serif;
   font-size: 2.5em;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 }
 
 p#description-title {
   font-size: 1.5em;
   margin-bottom: 0.6em;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 }
 
 p#description {
   font-size: 1.3em;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 }
 
 .ratings {
@@ -344,6 +370,7 @@ p#description {
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   margin-bottom: 1.5em;
 }
@@ -351,21 +378,34 @@ p#description {
 .ratings fieldset {
   width: 25%;
   height: 15vh;
+  @media (max-width: 768px) {
+    height: 12vh;
+  }
   border-radius: 10px;
   legend {
     margin-left: 5px;
     padding: 5px;
     font-size: 1.1em;
+    @media (max-width: 768px) {
+      font-size: 0.7em;
+    }
   }
 }
 
 .rating-container {
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
   span {
     max-width: 60%;
   }
   p {
     font-size: 2em;
+    @media (max-width: 768px) {
+      font-size: 1.3em;
+    }
   }
 }
 
@@ -373,6 +413,11 @@ p#description {
   max-height: 90%;
   max-width: 60%;
   margin-top: -10px;
+  @media (max-width: 768px) {
+    max-height: 170%;
+    max-width: 170%;
+    margin-left: -30%;
+  }
 }
 
 #rotten-tomatoes-icon img {
@@ -380,12 +425,22 @@ p#description {
   max-width: 50%;
   margin-left: 5px;
   margin-top: -5px;
+  @media (max-width: 768px) {
+    max-height: 100%;
+    max-width: 105%;
+    margin-left: -3%;
+  }
 }
 
 #metacritic-icon img {
   max-height: 75%;
   max-width: 50%;
   margin-left: 10px;
+  @media (max-width: 768px) {
+    margin-left: -6%;
+    max-height: 120%;
+    max-width: 120%;
+  }
 }
 
 .film-data-select-container {
@@ -396,6 +451,9 @@ p#description {
 
 .film-data-select-genre label {
   font-size: 2em;
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
 }
 
 .film-data-select-container select,
@@ -403,6 +461,11 @@ p#description {
   width: 45%;
   margin: 0;
   transition: transform 0.3s ease;
+  @media (max-width: 768px) {
+    margin-top: -5%;
+    font-size: 0.8em;
+    height: 3em;
+  }
 }
 
 .film-data-select-container select:hover,
@@ -547,6 +610,12 @@ main .saved-film-card {
   border-radius: 15px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  @media (max-width: 768px) {
+    width: 60%;
+    background-color: rgba(62, 10, 10, 1);
+    bottom: -6vh;
+    right: 4%;
+  }
 }
 
 .alert-popup-flex-container {
@@ -571,6 +640,9 @@ main .saved-film-card {
   border-radius: 0 15px 0 15px;
   background-color: rgb(62, 10, 10);
   cursor: pointer;
+  @media (max-width: 768px) {
+    background-color: rgb(125, 17, 17);
+  }
 }
 
 .alert-popup-cross-container img:hover {
@@ -579,7 +651,7 @@ main .saved-film-card {
 
 .alert-popup p {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   margin-top: 5px;
   font-weight: bold;
 }
