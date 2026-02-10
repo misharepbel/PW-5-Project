@@ -80,12 +80,17 @@ document.addEventListener('DOMContentLoaded', function () {
             && !movieDescInput.validity.valid) {
             const invalidInputs = document.querySelectorAll('textarea#movie-desc ~ p');
             if (invalidInputs.length > 0) {
+                const invalidInputInnerHTML = document.querySelector('textarea#movie-desc + p');
+                let length = movieDescInput.value.length;
+                invalidInputInnerHTML.innerHTML = `Movie description have to be at least 50 symbols, now ${length}`;
                 return;
             }
             const invalidInputText = document.createElement('p');
             invalidInputText.classList.add('invalid-input-text');
-            invalidInputText.innerHTML = "Movie description have to be at least 50 symbols";
             movieDescInput.after(invalidInputText);
+            const invalidInputInnerHTML = document.querySelector('textarea#movie-desc + p');
+            let length = movieDescInput.value.length;
+            invalidInputInnerHTML.innerHTML = `Movie description have to be at least 50 symbols, now ${length}`;
         } else if (e.target.closest('textarea#movie-desc') === movieDescInput
             && movieDescInput.validity.valid 
             && movieDescInput.nextSibling === document.querySelector('textarea#movie-desc + p')) {
