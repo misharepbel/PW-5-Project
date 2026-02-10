@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!form.checkValidity()){
             return;
         }
-        movieTitleInput.value = '';
-        movieDescInput.value = '';
         if (user !== null) {
+            movieTitleInput.value = '';
+            movieDescInput.value = '';
             const popupIcon = popupAlert.querySelector('.alert-popup-icon-container img');
             popupIcon.src = '../media/green_check_mark.png'
             popupAlertText.style.fontSize = '0.9em';
@@ -42,13 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
         popupAlert.style.display = 'block';
-        await new Promise(resolve => setTimeout(resolve, 500));
+        // CHECK WHAT`S WRONG WITH THIS ANIMATION
+        await new Promise(resolve => setTimeout(resolve, 100));
         popupAlert.style.opacity = '1';
         await new Promise(resolve => setTimeout(resolve, 10000));
         popupAlert.style.display = 'none';
     }
 
     function closePopup() {
+        popupAlert.style.opacity = '0';
         popupAlert.style.display = 'none';
     }
 
