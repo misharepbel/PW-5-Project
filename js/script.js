@@ -19,14 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const movieTitleInput = document.querySelector('input#movie-name');
     const movieDescInput = document.querySelector('textarea#movie-desc');
 
-    cross.addEventListener('click', () => {
+    if (cross) {
+        cross.addEventListener('click', () => {
         closePopup();
-    })
-
-    submitButton.addEventListener('click', (e) => {
+    })}
+    
+    if (submitButton) {
+        submitButton.addEventListener('click', (e) => {
         e.preventDefault();
         showPopupAlert();
-    })
+    })}
+    
 
     async function showPopupAlert() {
         if (!form.checkValidity()){
@@ -55,9 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //Validation
-    
-    movieTitleInput.addEventListener('focusout', checkInputValidity);
-    movieDescInput.addEventListener('focusout', checkInputValidity);
+    if (movieTitleInput) {
+        movieTitleInput.addEventListener('focusout', checkInputValidity);
+    }
+    if (movieDescInput) {
+        movieDescInput.addEventListener('focusout', checkInputValidity);
+    }
 
     function checkInputValidity(e) {
         if (e.target.closest('input#movie-name') === movieTitleInput 
