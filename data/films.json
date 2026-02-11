@@ -17,26 +17,26 @@
   ],
 
   "japaneseArthouse": [
-    { "filmName": "rubbersLover", "year": 1996, "imdbId": "tt0117490" },
+    { "filmName": "rubbersLover", "year": 1996, "imdbId": "tt0227408" },
     { "filmName": "visitorQ", "year": 2001, "imdbId": "tt0290329" },
     { "filmName": "audition", "year": 1999, "imdbId": "tt0235198" },
     { "filmName": "gozu", "year": 2003, "imdbId": "tt0361668" },
     {
       "filmName": "horrorsOfMalformedMen",
       "year": 1969,
-      "imdbId": "tt0064073"
+      "imdbId": "tt0142257"
     },
-    { "filmName": "aSnakeOfJune", "year": 2002, "imdbId": "tt0337961" },
+    { "filmName": "aSnakeOfJune", "year": 2002, "imdbId": "tt0330904" },
     { "filmName": "funeralParadeOfRoses", "year": 1969, "imdbId": "tt0064068" },
     { "filmName": "angelsEgg", "year": 1985, "imdbId": "tt0208502" },
     { "filmName": "womanInTheDunes", "year": 1964, "imdbId": "tt0058625" },
     { "filmName": "tokyoFist", "year": 1995, "imdbId": "tt0114690" },
-    { "filmName": "bulletBallet", "year": 1998, "imdbId": "tt0151809" },
-    { "filmName": "himiko", "year": 1974, "imdbId": "tt0071616" },
+    { "filmName": "bulletBallet", "year": 1998, "imdbId": "tt0163563" },
+    { "filmName": "himiko", "year": 1974, "imdbId": "tt0071609" },
     {
       "filmName": "pastoralToDieInTheCountry",
       "year": 1974,
-      "imdbId": "tt0071910"
+      "imdbId": "tt0071406"
     }
   ],
 
@@ -72,7 +72,7 @@
     { "filmName": "theActOfKilling", "year": 2012, "imdbId": "tt2375605" },
     { "filmName": "troubleEveryDay", "year": 2001, "imdbId": "tt0204700" },
     { "filmName": "baiseMoi", "year": 2000, "imdbId": "tt0249380" },
-    { "filmName": "singaporeSling", "year": 1990, "imdbId": "tt0102920" },
+    { "filmName": "singaporeSling", "year": 1990, "imdbId": "tt0100623" },
     { "filmName": "dogtooth", "year": 2009, "imdbId": "tt1379182" },
     { "filmName": "thePianoTeacher", "year": 2001, "imdbId": "tt0254686" }
   ],
@@ -92,14 +92,14 @@
   "experimental": [
     { "filmName": "begotten", "year": 1989, "imdbId": "tt0101420" },
     { "filmName": "skinamarink", "year": 2022, "imdbId": "tt21307994" },
-    { "filmName": "dogStarMan", "year": 1964, "imdbId": "tt0057997" },
-    { "filmName": "decasia", "year": 2002, "imdbId": "tt0303327" },
+    { "filmName": "dogStarMan", "year": 1964, "imdbId": "tt5896468" },
+    { "filmName": "decasia", "year": 2002, "imdbId": "tt0303325" },
     { "filmName": "laJetee", "year": 1962, "imdbId": "tt0056119" },
     { "filmName": "koyaanisqatsi", "year": 1982, "imdbId": "tt0085809" },
     { "filmName": "manWithAMovieCamera", "year": 1929, "imdbId": "tt0019760" },
     { "filmName": "theFalls", "year": 1980, "imdbId": "tt0080738" },
-    { "filmName": "outerSpace", "year": 1999, "imdbId": "tt0157209" },
-    { "filmName": "zornsLemma", "year": 1970, "imdbId": "tt0066622" }
+    { "filmName": "outerSpace", "year": 1999, "imdbId": "tt0219964" },
+    { "filmName": "zornsLemma", "year": 1970, "imdbId": "tt0131149" }
   ],
 
   "psychologicalDescent": [
