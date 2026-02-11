@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ' (' + uname + ')';
         }
         document.querySelectorAll('.logged-in-only').forEach((element) => {
-            element.setAttribute('href', 'saved.html');
+            element.href = document.title === 'Hidden Movies' ? 'pages/saved.html' : 'saved.html';
             element.style.cursor = 'pointer';
             element.style.color = 'var(--light-blue)';
         });
