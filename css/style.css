@@ -141,6 +141,7 @@ main#contactmain {
       color: var(--light-blue);
       textarea {
         background-color: var(--light-blue);
+        resize: vertical;
       }
       input,
       textarea {
