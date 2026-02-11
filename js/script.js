@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //Video background
+    const video = document.getElementById('bg');
+    const src =
+        window.innerWidth >= 1024
+            ? '../media/7988175-hd_2048_1080_25fps.mp4'
+            : '../media/7984191-hd_720_1366_25fps.mp4';
+    video.src = src;
+
     const userStr = localStorage.getItem('user');
     const user = userStr ? JSON.parse(userStr) : null;
     
@@ -128,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ' (' + uname + ')';
         }
         document.querySelectorAll('.logged-in-only').forEach((element) => {
-            element.setAttribute('href', 'pages/saved.html');
+            element.setAttribute('href', 'saved.html');
             element.style.cursor = 'pointer';
             element.style.color = 'var(--light-blue)';
         });
