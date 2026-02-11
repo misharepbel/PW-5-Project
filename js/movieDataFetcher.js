@@ -15,7 +15,7 @@ const omdbApiKey = apiSettings.omdbSettings.apiKey;
 const tmdbApiKey = apiSettings.tmdbSettings.apiAccessToken;
 
 //OMDB API endpoint
-let omdbApi = `http://www.omdbapi.com/?apikey=${omdbApiKey}`;
+let omdbApi = `https://www.omdbapi.com/?apikey=${omdbApiKey}`;
 
 //Youtube link to videos
 let trailerLink = 'https://www.youtube.com/embed/';
