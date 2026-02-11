@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
         showPopupAlert();
     })}
     
+    let closePopupResolver = null;
+
+    function waitForClose() {
+        return new Promise(resolve => {
+            closePopupResolver = resolve;
+        })
+    }
 
     async function showPopupAlert() {
         if (!form.checkValidity()){
@@ -48,13 +55,21 @@ document.addEventListener('DOMContentLoaded', function () {
         // CHECK WHAT`S WRONG WITH THIS ANIMATION
         await new Promise(resolve => setTimeout(resolve, 100));
         popupAlert.style.opacity = '1';
-        await new Promise(resolve => setTimeout(resolve, 10000));
+        await Promise.race([new Promise(resolve => setTimeout(resolve, 10000)),
+             waitForClose()
+            ]);
+
         popupAlert.style.display = 'none';
     }
 
     function closePopup() {
         popupAlert.style.opacity = '0';
         popupAlert.style.display = 'none';
+
+        if (closePopupResolver) {
+            closePopupResolver();
+            closePopupResolver = null;
+        }
     }
 
     //Validation

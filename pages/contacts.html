@@ -22,19 +22,35 @@
       <section class="card">
         <h2>Want to suggest a movie?</h2>
         <p class="cardtext">
-          Please fill out the form below to suggest a movie. We select our repertoire extremely carefully, so make sure to clearly explain why your suggestion deserves to be featured on this platform.
-          <br /><br />
-          <form id="movie-form">
-            <label for="movie-name">What's your movie called?*</label><br>
-            <input type="text" id="movie-name" required name="movie-name" /><br>
-            <label for="movie-desc">What's it about and what's so special about it (50-3000 characters)?*</label><br>
-            <textarea id="movie-desc" required minlength="50" maxlength="3000" name="movie-desc"></textarea><br>
-            <label for="poster">Upload a poster of the movie</label><br>
-            <input type="file" id="poster" name="poster" accept="image/*" /><br>
-            <label for="trailer-link">Please provide a link to a trailer for your submission</label><br>
-            <input type="url" id="trailer-link" name="trailer-link" /><br>
-            <input type="submit" value="Submit Suggestion" />
-          </form>
+          Please fill out the form below to suggest a movie. We select our
+          repertoire extremely carefully, so make sure to clearly explain why
+          your suggestion deserves to be featured on this platform.
+
+        <br /><br />
+
+        <form id="movie-form">
+          <label for="movie-name">What's your movie called?*</label><br />
+          <input type="text" id="movie-name" required name="movie-name" /><br />
+          <label for="movie-desc"
+            >What's it about and what's so special about it (50-3000
+            characters)?*</label
+          ><br />
+          <textarea
+            id="movie-desc"
+            required
+            minlength="50"
+            maxlength="3000"
+            name="movie-desc"
+          ></textarea
+          ><br />
+          <label for="poster">Upload a poster of the movie</label><br />
+          <input type="file" id="poster" name="poster" accept="image/*" /><br />
+          <label for="trailer-link"
+            >Please provide a link to a trailer for your submission</label
+          ><br />
+          <input type="url" id="trailer-link" name="trailer-link" /><br />
+          <input type="submit" value="Submit Suggestion" />
+        </form>
         </p>
       </section>
       <section class="card">
@@ -59,28 +75,26 @@
         <form id="loginForm">
           <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" required />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required />
           </div>
           <button type="submit">Log in</button>
-          
         </form>
       </div>
     </div>
     <div class="alert-popup">
       <div class="alert-popup-flex-container">
-      <div class="alert-popup-icon-container">
-        <img src="../media/exclamation_mark.png" alt="Alert popup icon">
-      </div>
-      <div class="alert-popup-cross-container">
-        <img src="../media/cross.png" alt="Cross popup icon">
-      </div>
+        <div class="alert-popup-icon-container">
+          <img src="../media/exclamation_mark.png" alt="Alert popup icon" />
+        </div>
+        <div class="alert-popup-cross-container">
+          <img src="../media/cross.png" alt="Cross popup icon" />
+        </div>
       </div>
       <p>You have to log in before submitting form</p>
-      
     </div>
     <script src="../js/script.js"></script>
   </body>

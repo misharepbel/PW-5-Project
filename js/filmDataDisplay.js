@@ -23,7 +23,7 @@ export async function displayFilmData() {
         //Fade out randomiser main
         if (randomiserMainDisplayMode !== 'none') {
             randomiserMain.style.opacity = 0;
-            await new Promise((resolve) => setTimeout(resolve, 1500));
+            await new Promise((resolve) => setTimeout(resolve, 1000));
             randomiserMain.style.display = 'none';
         }
         //Fade in film data section

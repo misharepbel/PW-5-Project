@@ -50,7 +50,11 @@ async function extractMovieData(filmOmdb, filmTmdb) {
     filmData.shortDesc = filmOmdb.Plot;
     filmData.longDesc = '';
     filmData.poster = filmOmdb.Poster;
-    filmData.trailerKey = trailerLink + filmTmdb.trailerKey;
+    if (!filmTmdb.trailerKey) {
+        filmData.trailerKey = trailerLink + 'XGxIE1hr0w4';
+    } else {
+        filmData.trailerKey = trailerLink + filmTmdb.trailerKey;
+    }
     filmData.imdbRating = filmOmdb.imdbRating;
     filmData.rottenTomatoesRating = filmOmdb.Ratings?.[1]?.Value ?? 'N/A';
     filmData.metacriticRating = filmOmdb.Ratings?.[2]?.Value ?? 'N/A';
@@ -71,7 +75,6 @@ export async function fetchMovieData() {
         tmdbOptions,
     );
     const filmTmdb = await responseTmdb.json();
-
     let tmdbFilmId = filmTmdb.movie_results[0].id;
 
     // Fetch budget for a film
@@ -88,16 +91,14 @@ export async function fetchMovieData() {
         tmdbOptions,
     );
     const trailerTmdb = await trailerResponseTmdb.json();
-    const trailerKey = trailerTmdb.results.find((x) => x.type == 'Trailer').key;
+    const trailerKey = trailerTmdb.results.find(
+        (x) => x.type == 'Trailer',
+    )?.key;
 
     //Class for budget and trailer key
     const budgetTrailerTmdb = new tmdbApiTransit(budget, trailerKey);
 
     const filmData = await extractMovieData(filmOmdb, budgetTrailerTmdb);
-
-    for (let item in filmData) {
-        console.log(`${item}: ${filmData[item]}`);
-    }
 
     return filmData;
 }
@@ -116,10 +117,10 @@ function selectMovie() {
     } else {
         userGenreSelect = genreSelects[1].value;
     }
-    console.log(userGenreSelect);
     const filmsByGenreCollection = JSON.parse(
         localStorage.getItem('filmsData'),
     );
+
     const randomMovie =
         filmsByGenreCollection[userGenreSelect][
             Math.floor(

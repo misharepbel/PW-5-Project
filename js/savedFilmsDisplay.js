@@ -67,7 +67,20 @@ async function savedFilmsDisplay() {
     }
 }
 
-function addOrRemoveFromSavedFilms() {
+async function addOrRemoveFromSavedFilms() {
+    const popupAlert = document.querySelector('.alert-popup');
+    const user = localStorage.getItem('user');
+    if (!user) {
+        popupAlert.style.display = 'block';
+        const popupText = popupAlert.querySelector('p');
+        popupText.innerHTML = 'You have to be logged in to save film';
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        popupAlert.style.opacity = '1';
+        await new Promise((resolve) => setTimeout(resolve, 10000));
+        popupAlert.style.opacity = '0';
+        popupAlert.style.display = 'none';
+        return;
+    }
     const filmTitle = document.querySelector('#film-title').innerHTML;
     const posterSrc = document.querySelector('.film-main img').src;
     const genre = document.querySelectorAll('.genre-select')[1].value;

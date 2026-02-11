@@ -139,6 +139,9 @@ main#contactmain {
     }
     form {
       color: var(--light-blue);
+      textarea {
+        background-color: var(--light-blue);
+      }
       input,
       textarea {
         width: 50%;
@@ -149,6 +152,14 @@ main#contactmain {
           height: 2rem;
           background-color: var(--light-blue);
           padding: 0.5rem;
+        }
+        border: none;
+        border-radius: 3px;
+        &:focus:not([type='file']) {
+          outline: 3px solid rgb(113, 185, 180);
+        }
+        @media (max-width: 768px) {
+          width: 100%;
         }
         &#poster {
           color: var(--light-blue);
@@ -183,7 +194,7 @@ main#contactmain {
         }
       }
       label {
-        margin-bottom: 2rem;
+        display: inline;
       }
     }
   }
@@ -203,7 +214,7 @@ a#secret {
   align-items: center;
   justify-content: center;
   opacity: 1;
-  transition: opacity 1.5s ease;
+  transition: opacity 1s ease;
 }
 
 #randomiser-card {
@@ -601,7 +612,7 @@ main .saved-film-card {
 
 .alert-popup {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: rgba(62, 10, 10, 0.6);
   width: 25%;
   height: 11%;
@@ -609,12 +620,13 @@ main .saved-film-card {
   right: 1%;
   border-radius: 15px;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
   @media (max-width: 768px) {
     width: 60%;
     background-color: rgba(62, 10, 10, 1);
-    bottom: -6vh;
-    right: 4%;
+    top: 27vh;
+    right: 20vw;
+    bottom: 0;
   }
 }
 
