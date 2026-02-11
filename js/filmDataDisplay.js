@@ -68,7 +68,6 @@ export async function displayFilmData() {
         filmData.metacriticRating;
 
     let isSaved = isSavedToLocalStorage(filmTitle);
-    console.log(isSaved);
     if (isSaved) {
         addToSavedButton.src = '../media/yellow_star.png';
     } else {
@@ -88,9 +87,6 @@ function isSavedToLocalStorage(filmTitle) {
     }
     let filmTitleParsed = filmTitleArray.join('');
 
-    console.log(filmTitleParsed);
-
     let filmLocalStorage = localStorage.getItem(`movie_${filmTitleParsed}`);
-    console.log(filmLocalStorage);
     return !filmLocalStorage ? false : true;
 }

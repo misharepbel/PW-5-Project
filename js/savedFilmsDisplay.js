@@ -1,5 +1,3 @@
-import { displayFilmData } from './filmDataDisplay.js';
-
 const addToSavedButton = document.querySelector(
     '#film-data-card span#add-to-saved',
 );
@@ -16,6 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
             .forEach((crossIcon) => {
                 crossIcon.addEventListener('click', removeSavedFilm);
             });
+
+        const savedFilmCards = document.querySelectorAll(
+            'main .saved-film-card',
+        );
+        if (savedFilmCards.length != 0) {
+            savedFilmCards.forEach((filmCard) =>
+                filmCard.addEventListener('click', goToImdbPage),
+            );
+        }
     }
 });
 
@@ -116,9 +123,6 @@ async function addOrRemoveFromSavedFilms() {
     };
 
     localStorage.setItem(`movie_${filmTitleParsed}`, JSON.stringify(film));
-
-    console.log(filmTitleParsed);
-    console.log(localStorage.getItem(`movie_${filmTitleParsed}`));
 }
 
 function removeSavedFilm(e) {
@@ -136,4 +140,38 @@ function removeSavedFilm(e) {
     localStorage.removeItem(`movie_${filmTitleParsed}`);
 
     window.location.reload();
+}
+
+function goToImdbPage(e) {
+    if (e.target.closest('.saved-film-card span.cross')) {
+        return;
+    }
+
+    const card = e.target.closest('.saved-film-card');
+    const filmTitle = card.querySelector('h4').innerHTML;
+    const filmTitleArray = filmTitle
+        .toLowerCase()
+        .split(' ')
+        .map((word) => word.replace(/[^a-z]/g, ''));
+    for (let i = 1; i < filmTitleArray.length; i++) {
+        filmTitleArray[i] =
+            filmTitleArray[i][0].toUpperCase() + filmTitleArray[i].substring(1);
+    }
+
+    let filmTitleParsed = filmTitleArray.join('');
+
+    console.log(filmTitleParsed);
+
+    const genre = JSON.parse(
+        localStorage.getItem(`movie_${filmTitleParsed}`),
+    ).genre;
+
+    const films = JSON.parse(localStorage.getItem('filmsData'));
+
+    const imdbId = films[genre].find(
+        (film) => film.filmName == filmTitleParsed,
+    ).imdbId;
+
+    const imdbLink = 'https://www.imdb.com/title/' + imdbId;
+    window.open(imdbLink, '_blank');
 }
