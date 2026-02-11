@@ -111,7 +111,7 @@
     { "filmName": "pi", "year": 1998, "imdbId": "tt0138704" },
     { "filmName": "theLighthouse", "year": 2019, "imdbId": "tt7984734" },
     { "filmName": "deadRingers", "year": 1988, "imdbId": "tt0094964" },
-    { "filmName": "horseMoney", "year": 2014, "imdbId": "tt3093546" },
+    { "filmName": "horseMoney", "year": 2014, "imdbId": "tt3907156" },
     { "filmName": "images", "year": 1972, "imdbId": "tt0068732" }
   ],
 
@@ -153,6 +153,11 @@
       "filmName": "theHourglassSanatorium",
       "year": 1973,
       "imdbId": "tt0070628"
+    },
+    {
+      "filmName": "teletubbies",
+      "year": 1997,
+      "imdbId": "tt0142055"
     }
   ]
 }
