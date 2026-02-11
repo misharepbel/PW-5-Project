@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const video = document.getElementById('bg');
     const src =
         window.innerWidth >= 1024
-            ? '../media/7988175-hd_2048_1080_25fps.mp4'
-            : '../media/7984191-hd_720_1366_25fps.mp4';
+            ? '../media/horizontal.mp4'
+            : '../media/vertical.mp4';
     video.src = src;
 
     const userStr = localStorage.getItem('user');
@@ -136,13 +136,13 @@ document.addEventListener('DOMContentLoaded', function () {
             ' (' + uname + ')';
         }
         document.querySelectorAll('.logged-in-only').forEach((element) => {
-            element.setAttribute('href', 'saved.html');
+            element.setAttribute('href', '/pages/saved.html');
             element.style.cursor = 'pointer';
             element.style.color = 'var(--light-blue)';
         });
     }
     else if (window.location.pathname.split('/').pop()==="saved.html"){
-        window.location.href = 'index.html';
+        window.location.href = '/../index.html';
     }
 
     document
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             user.isLoggedIn = false;
             if (window.location.pathname.split('/').pop()==="saved.html") {
-                window.location.href = 'index.html';
+                window.location.href = '/../index.html';
             } else {
                 window.location.reload();
             }
