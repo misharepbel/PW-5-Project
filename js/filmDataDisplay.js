@@ -12,6 +12,8 @@ export async function displayFilmData() {
         behavior: 'smooth',
     });
 
+    const filmData = await fetchMovieData();
+
     async function fadeSwap() {
         const randomiserMain = document.querySelector('#randomiser-main');
         const filmDataSection = document.querySelector(
@@ -30,20 +32,38 @@ export async function displayFilmData() {
         if (randomiserMainDisplayMode !== 'none') {
             filmDataSection.style.display = 'flex';
             await new Promise((resolve) => setTimeout(resolve, 1500));
-
+            fillInFilmData(filmData);
             filmDataSection.style.opacity = '1';
         } else {
             filmDataSection.style.transition = 'opacity 0.5s ease';
             filmDataSection.style.opacity = '0';
             await new Promise((resolve) => setTimeout(resolve, 1500));
+            fillInFilmData(filmData);
             filmDataSection.style.opacity = '1';
             filmDataSection.style.transition = 'opacity 1.5s ease';
         }
     }
 
-    fadeSwap();
+    await fadeSwap();
+}
 
-    const filmData = await fetchMovieData();
+function isSavedToLocalStorage(filmTitle) {
+    const filmTitleArray = filmTitle.innerHTML
+        .toLowerCase()
+        .split(' ')
+        .map((word) => word.replace(/[^a-z]/g, ''));
+
+    for (let i = 1; i < filmTitleArray.length; i++) {
+        filmTitleArray[i] =
+            filmTitleArray[i][0].toUpperCase() + filmTitleArray[i].substring(1);
+    }
+    let filmTitleParsed = filmTitleArray.join('');
+
+    let filmLocalStorage = localStorage.getItem(`movie_${filmTitleParsed}`);
+    return !filmLocalStorage ? false : true;
+}
+
+function fillInFilmData(filmData) {
     const filmTitle = document.querySelector('h2#film-title');
     const addToSavedButton = document.querySelector('span#add-to-saved img');
 
@@ -73,20 +93,4 @@ export async function displayFilmData() {
     } else {
         addToSavedButton.src = '../media/empty_star.png';
     }
-}
-
-function isSavedToLocalStorage(filmTitle) {
-    const filmTitleArray = filmTitle.innerHTML
-        .toLowerCase()
-        .split(' ')
-        .map((word) => word.replace(/[^a-z]/g, ''));
-
-    for (let i = 1; i < filmTitleArray.length; i++) {
-        filmTitleArray[i] =
-            filmTitleArray[i][0].toUpperCase() + filmTitleArray[i].substring(1);
-    }
-    let filmTitleParsed = filmTitleArray.join('');
-
-    let filmLocalStorage = localStorage.getItem(`movie_${filmTitleParsed}`);
-    return !filmLocalStorage ? false : true;
 }
